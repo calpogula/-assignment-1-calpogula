@@ -1,9 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Link your CSS file and other references here -->
-    </head>
-    <body>
-        <!-- Content goes here -->
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <button class="menu-button" type="button">
+            <img src="assets/menu_icon.png" alt="Menu">
+        </button>
+
+        <form class="search-box">
+            <img src="assets/search_icon.png" alt="">
+            <input type="text" placeholder="Quick find" aria-label="Quick find">
+        </form>
+
+        <p class="task-counter">
+            <img src="assets/check_icon.png" alt="">
+            30/5
+        </p>
+    </header>
+
+    <section class="page-layout">
+        <nav class="sidebar">
+            <ul>
+                <li class="active">
+                    <a href="#inbox">
+                        <img src="assets/inbox_icon.png" alt="">
+                        Inbox <span class="count">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#today">
+                        <img src="assets/calendar_icon.png" alt="">
+                        Today <span class="count">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#upcoming">
+                        <img src="assets/upcoming_icon.png" alt="">
+                        Upcoming
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content" id="inbox">
+            <section class="tasks">
+                <h1>Inbox</h1>
+                <ul>
+                    <li>
+                        <label><input type="checkbox"> Call Mom</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"> Buy the new issue of Scientific American</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"> Return the textbook to Josie</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"> Buy the new album by Rake</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"> Buy a gift card for Dad</label>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </section>
+</body>
 </html>
